@@ -12,14 +12,12 @@ import java.util.Set;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="user")
+@Table(name="test")
 public class User {
-
     @JsonIgnore
     @Id
     @Column(name="user_id")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
     private String userName;
